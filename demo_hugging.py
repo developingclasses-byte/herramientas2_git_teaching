@@ -13,7 +13,7 @@ from transformers import pipeline
 model_path = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 sentiment_task = pipeline("sentiment-analysis", model=model_path, tokenizer=model_path,device=0)
 sentiment_task("T'estimo!")
-
+#hola estudiantes
 help(pipeline)
 
 base=pd.read_csv('https://github.com/clairett/pytorch-sentiment-classification/raw/master/data/SST2/train.tsv', delimiter='\t', header=None)
